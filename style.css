@@ -1,0 +1,204 @@
+/* Outsourced Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter&display=swap');
+
+/* CSS resets */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* User Styles */
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  position: relative;
+  font-family: 'DM Sans', sans-serif;
+  min-width: 320px;
+  height: 100vh;
+  background-color: hsl(33, 100%, 98%);
+}
+
+
+.wrapper {
+  position: absolute;
+  max-width: 339px;
+  margin: 0 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0; left: 0;
+}
+
+@media screen and (min-width: 376px) {
+  .wrapper {
+    margin: 0 auto;
+  }
+}
+
+.header {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 1px 1px 1px hsl(28, 10%, 90%);
+
+}
+
+.text > * {
+  padding-left: 1rem;
+}
+
+.text > h2 {
+  font-weight: 400;
+  font-size: .8rem;
+  color: hsl(27, 66%, 92%);
+}
+
+.text > p {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 700;
+}
+
+img.logo {
+  width: 25%;
+  padding-right: 1rem;
+}
+
+.main {
+  background-color: white;
+  padding: 1rem 0;
+  border-radius: .5rem;
+  box-shadow: 0px 1px 1px 1px hsl(28, 10%, 90%);
+  width: 100%;
+}
+
+.chart {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.chart > h1 {
+  text-align: left;
+  color: hsl(25, 47%, 15%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-left: 1rem;
+}
+
+ul.bars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 200px;
+  /* border: 1px solid yellow; */
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.bars li {
+  display: flex;
+  flex-direction: column;
+  width: 11%;
+}
+
+
+.bars * {
+  display: inline-block;
+}
+
+.bars i {
+  display: none;
+  background-color: hsl(25, 47%, 15%);
+  color: white;
+  font-style: normal;
+  font-size: .6rem;
+  width: 130%;
+  margin-left: -15%;
+  margin-bottom: .25rem;
+  padding: .3rem 0;
+  border-radius: .2rem;
+}
+
+.bars li:hover > i {
+  display: inline-block;
+}
+
+.bars li:hover > span {
+  opacity: .5;
+}
+
+.bars span {
+  border-radius: .20rem;
+  width: 100%;
+}
+
+.bars p {
+  color: hsl(28, 10%, 53%);
+  font-size: .6rem;
+}
+
+
+.total {
+  color: hsl(28, 10%, 53%);
+  font-size: .9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 1rem;
+  border-top: 1px solid hsl(28, 10%, 53%);
+  padding-top: 1.25rem;
+}
+
+.left {
+  width: 50%;
+}
+
+.left > h3 {
+  font-size: .9rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.left > p {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.right {
+  text-align: right;
+  width: 50%;
+  padding-bottom: .25rem; /* experimental */
+}
+
+.right p:first-of-type {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+
+}
+
+.right p:last-of-type {
+  white-space: nowrap;
+
+}
